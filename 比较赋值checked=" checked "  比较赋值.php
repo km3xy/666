@@ -28,9 +28,14 @@ echo $random_float;
 
 $t=$_POST['ccc'];  
 
-$x=mt_rand(); 
+$x=mt_rand()/mt_getrandmax();
 
-$e=mt_rand(); 
+$e=mt_rand()/mt_getrandmax();
+
+//$x=mt_rand();
+
+//$e=mt_rand();
+
 
 
 if ($t>$x && $t>$e  &&  $x>$e  )
