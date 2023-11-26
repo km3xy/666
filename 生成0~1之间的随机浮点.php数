@@ -1,0 +1,15 @@
+也可以使用mt_rand函数生成随机浮点数，如下所示：
+
+// 生成0~1之间的随机浮点数
+$random_float = mt_rand()/mt_getrandmax();
+echo $random_float;
+上述代码会生成0到1之间的一个随机浮点数，并将其赋值给变量$random_float，最后通过echo语句输出。
+
+
+mt_rand()/mt_getrandmax();
+
+
+https://www.python100.com/html/56444.html
+
+
+
