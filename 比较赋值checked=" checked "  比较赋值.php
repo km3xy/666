@@ -5,15 +5,18 @@
 // if ($t>$x && $t>$e  &&  $x>$e  )
 //条件成立赋值，不成立不赋值
 
-
+//可以加入浮点数
 // 生成0~1之间的随机浮点数
 $random_float = mt_rand()/mt_getrandmax();
 echo $random_float;
 上述代码会生成0到1之间的一个随机浮点数
 
+4s5r   4舍5入
+
+
  <label>
      
-  <input type="checkbox" name="ccc[1]" id="ccc" value="1">随机选中input点我,这里是控制开关
+  <input type="checkbox" name="ccc[1]" id="ccc" value="66666666666666666">随机选中input点我,这里是控制开关
 
  </label>
 
