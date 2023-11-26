@@ -1,7 +1,13 @@
 //随机比较选中input  
 
-//
+//可以加入浮点数
 
+// 生成0~1之间的随机浮点数
+$random_float = mt_rand()/mt_getrandmax();
+echo $random_float;
+上述代码会生成0到1之间的一个随机浮点数
+
+4s5r   4舍5入   
 
 <label>
      
