@@ -1,6 +1,6 @@
 <html>
-
     
+//php获取input获取提交按钮
 
 <form method="post" action="tjdl123456789tj.php">
       
@@ -55,8 +55,9 @@ echo "未选择";
  </label>
 
  <label>
-     
-  <input type="checkbox"           name="2" id="c2" value="2">2
+     
+<input type="checkbox"         
+name="c2" id="c" value="2">2
   
  <br>
   
@@ -91,7 +92,8 @@ echo "未选择";
  </label>
  <label>
      
-  <input type="checkbox"           name="3" id="c3" value="3">3
+  <input type="checkbox"         
+name="c3" id="c" value="3">3
   
  
  <br>
@@ -123,8 +125,10 @@ echo "未选择";
 
  <label>
      
-  <input type="checkbox"           name="4" id="c4" value="4">4
- <br>
+  <input type="checkbox"        
+name="c4" id="c" value="4">4
+
+<br>
 <?php 
 
 $x=$_POST['c4'];
@@ -155,7 +159,8 @@ echo "未选择";
 
  <label>
      
-  <input type="checkbox"           name="5" id="c5" value="5">5
+  <input type="checkbox"         
+name="c5" id="c" value="5">5
   
  <br>
 
