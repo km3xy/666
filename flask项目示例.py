@@ -20,6 +20,19 @@ def chat():
     ) 
 
 
+assistant_message = response.choices[0].message['content'].strip()
+    return jsonify({"message": assistant_message})
+
+@app.route('/')
+def index():
+    return send_from_directory('static', 'index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5003)  # 使用不同的端口以避免冲突
+
+
+
+
 
 对应的html    index.html
 
