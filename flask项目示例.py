@@ -79,6 +79,10 @@ if __name__ == '__main__':
 
 
 
-
+项目目录结构应该类似于以下内容：
+termux_files/
+├── app.py
+└── static/
+    └── index.html这样，当你运行 Flask 应用时，Flask 将能够找到并提供 static 文件夹中的 index.html 文件
 
 
