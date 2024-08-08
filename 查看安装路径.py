@@ -50,7 +50,11 @@ Location: /data/data/com.termux/files/usr/lib/python3.11/site-packages
 Requires: aiohttp, requests, tqdm
 Required-by:
 
-.../0/termux_files $ pip show flask
+.../0/termux_files
+
+//查看flask路径
+
+$ pip show flask
 Name: Flask
 Version: 3.0.3
 Summary: A simple framework for building complex web applications.
@@ -97,7 +101,14 @@ def index():
     return send_from_directory('static', 'index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5003)  # 仅用于调试index.html<!DOCTYPE html>
+    app.run(debug=True, port=5003) 
+
+
+    
+# 仅用于调试index.html
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -133,13 +144,28 @@ if __name__ == '__main__':
         });
     </script>
 </body>
-</html>目录结构确保项目目录结构如下：your_project/
+</html>
+
+目录结构确保项目目录结构如下：
+
+
+
+your_project/
 ├── app.py
 └── static/
-    └── index.html通过以上步骤，确认你能够使用 Gunicorn 部署和运行 Flask 应用，并测试其性能和响应速度。如果仍有问题，请提供详细错误日志。
+    └── index.html
+    
+    
+    
+    
+    通过以上步骤，确认你能够使用 Gunicorn 部署和运行 Flask 应用，并测试其性能和响应速度。如果仍有问题，请提供详细错误日志。
 
+项目路径
 
-
+termux_files/
+├── app.py
+└── static/
+    └── index.html
 
 
 
