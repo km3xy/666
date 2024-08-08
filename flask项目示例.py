@@ -1,3 +1,7 @@
+from flask import Flask, request, jsonify, send_from_directory
+import openai
+
+
 app = Flask(__name__)
 
 # 替换为你的 OpenAI API 密钥
