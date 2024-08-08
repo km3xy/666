@@ -96,6 +96,40 @@ if __name__ == '__main__':
 
 
 
+
+本地部署 使用   termux
+
+尝试更改 Termux 的主目录。为了确保你能够成功将 Termux 的主目录更改为 /storage/emulated/0/termux_files，请按照以下步骤仔细操作。
+1. 创建目标目录首先，确保你在内置存储中创建了一个新的目录：mkdir -p /storage/emulated/0/termux_files
+2. 复制文件到新目录将现有的 Termux 目录内容复制到新的目录中：cp -r /data/data/com.termux/files/home/* /storage/emulated/0/termux_files/
+
+3.将 HTML 文件放在 Flask 的静态文件夹中创建一个名为 static 的文件夹，并将 index.html 文件放入其中。然后在 Flask 应用中添加一条路由来提供这个文件。# 修改后的 app.py
+
+
+在你的项目目录中创建一个名为 static 的文件夹非常简单。
+可以用在/storage/emulated/0/termux_files直接创建名为 static 的文件夹
+
+你也可以使用命令行或图形界面来创建这个文件夹。使用命令行创建 static 文件夹打开终端或命令提示符。导航到你的项目目录。
+例如，如果你的项目在 termux_files 文件夹中，
+可以使用以下命令：cd/storage/emulated/0/termux_files
+
+可以用mt直接创建static 文件夹，也可以使用命令来创建
+
+创建名为 static 的文件夹：mkdir static
+
+将你的 index.html 文件放到 static 文件夹中。
+例如，如果你的 index.html 文件在当前目录下，可以使用以下命令：mv index.html static/
+
+使用图形界面创建 static 文件夹打开你的文件管理器。导航到你的项目目录。创建一个新文件夹并命名为 static。将 index.html 文件拖放到 static 文件夹中。更新后的项目结构你的项目目录结构应该类似于以下内容：
+termux_files/
+├── app.py
+└── static/
+    └── index.html这样，当你运行 Flask 应用时，Flask 将能够找到并提供 static 文件夹中的 index.html 文件
+
+
+
+
+
 项目目录结构应该类似于以下内容：
 termux_files/
 ├── app.py
