@@ -17,7 +17,11 @@ Required-by:
 WARNING: Package(s) not found: python
 .../0/termux_files $ pip show python
 WARNING: Package(s) not found: python
-.../0/termux_files $ python -m site
+.../0/termux_files 
+
+//查看python安装路径
+
+$ python -m site
 sys.path = [
     '/storage/emulated/0/termux_files',
     '/data/data/com.termux/files/usr/lib/python311.zip',
